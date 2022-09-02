@@ -1,8 +1,8 @@
-# Electrodynamics
+# Electrostatic
 ## About
 
 ### **What is this repo?**
-#### This is a simple basic electrodynamics simulation, displaying field arrows, and simulating the attraction and repulsion of charges.
+#### This is a simple basic electrostatic simulation, displaying field arrows, and simulating the attraction and repulsion of charges.
 ### **Why?**
 #### I did this as a high school physics project, was really useful to explain to my classmates visually how basic electrodynamics works
 ### **How**
@@ -17,8 +17,13 @@ $$
 - $Q_2$ = Second object's charge
 - $d$ = Distance between the two objects
 
+### **Build**
+#### Just run "make" for the html build, and "make WIN32" for exe build
+
 ### **How to use**
-#### Just open the main.html file inside the 'out' folder
+#### There are a couple ways you can use this repo
+#### You can just go to [link] and use it there
+#### Or just download the release files on the release tab, and run main.exe
 ---
 
 ## Controls
@@ -32,5 +37,3 @@ $$
 
 ## Todo
 - [ ] Collision
-- [ ] Win32 build in makefile (code is there, just need to add the recipe)
-- [ ] Implement compute shader calculation in win32 version

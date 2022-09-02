@@ -153,13 +153,17 @@ void UpdateDrawFrame(void)
 int main()
 {
     SetConfigFlags(FLAG_MSAA_4X_HINT);
-    InitWindow(800, 450, "raylib [core] example - basic window");
+    InitWindow(800, 450, "Electrostatic");
     SimInit();
     SetTargetFPS(60);
 
     #ifdef __EMSCRIPTEN__
     resizeCanvas();
     emscripten_set_main_loop(UpdateDrawFrame, 0, 1);
+    #else
+    while (!WindowShouldClose()){
+        UpdateDrawFrame();
+    }
     #endif
 
     CloseWindow();
